@@ -1,5 +1,7 @@
 /// 
 import { PanelCtrl } from './panel_ctrl';
+import { DataFrame } from '@grafana/data';
+
 declare class MetricsPanelCtrl extends PanelCtrl {
     loading: boolean;
     datasource: any;
@@ -37,6 +39,6 @@ declare class MetricsPanelCtrl extends PanelCtrl {
     removeQuery(target: any): void;
 	moveQuery(target: any, direction: number): void;
 	dataFormat: string;
-	handleSeriesData(data: Array<any>);
+	handleDataFrames(data: DataFrame[]);
 }
 export { MetricsPanelCtrl };
