@@ -35,6 +35,8 @@ declare class MetricsPanelCtrl extends PanelCtrl {
     explore(): void;
     addQuery(target: any): void;
     removeQuery(target: any): void;
-    moveQuery(target: any, direction: number): void;
+	moveQuery(target: any, direction: number): void;
+	dataFormat: string;
+	handleSeriesData(data: Array<any>);
 }
 export { MetricsPanelCtrl };
